@@ -6,8 +6,8 @@ url='https://github.com/ktossell/libuvc'
 pkgname='ros-melodic-libuvc'
 pkgver='0.0.6'
 _pkgver_patch=0
-arch=('any')
-pkgrel=3
+arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
+pkgrel=4
 license=('BSD')
 
 ros_makedepends=()

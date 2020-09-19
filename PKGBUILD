@@ -6,19 +6,21 @@ url='https://github.com/ktossell/libuvc'
 pkgname='ros-melodic-libuvc'
 pkgver='0.0.6'
 _pkgver_patch=0
-arch=('any')
-pkgrel=2
+arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
+pkgrel=4
 license=('BSD')
 
 ros_makedepends=()
 makedepends=('cmake'
              'ros-build-tools'
              ${ros_makedepends[@]}
-             libusb)
+             libusb
+             libjpeg-turbo)
 
 ros_depends=(ros-melodic-catkin)
 depends=(${ros_depends[@]}
-         libusb)
+         libusb
+         libjpeg-turbo)
 
 # Git version (e.g. for debugging)
 # _tag=release/melodic/libuvc/${pkgver}-${_pkgver_patch}
